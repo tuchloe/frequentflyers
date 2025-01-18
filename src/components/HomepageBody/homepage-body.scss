@@ -1,0 +1,19 @@
+.homepage {
+
+    &--hero-image {
+        background-image: url(../../assets/flights_nc_4.svg);
+        background-size: 100% 100%;
+        height: 400px;
+        width: 75vw;
+        margin: auto;
+    }
+
+    &--dropdown {
+        display: flex;
+    }
+
+    &--selection {
+        display: flex;
+    }
+
+}
