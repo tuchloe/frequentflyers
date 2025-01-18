@@ -1,31 +1,22 @@
 import './flightBuddyTab.scss';
 import React, { useState, useEffect } from "react";
 
-//3 tabs
-    //Best
-    //Cheapest
-    //flight buddy
-        //how fb works pop up
-//
-
 function FlightBuddyTab() {
-    const [cheapestPrice, setCheapestPrice] = useState(null); // State for the cheapest price
+    const [cheapestPrice, setCheapestPrice] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
   
     useEffect(() => {
-      // Fetch the flight data to find the cheapest price
       const fetchFlightData = async () => {
         setLoading(true);
         setError(null);
         try {
-          const response = await fetch("http://localhost:3000/fetch-flights"); // Adjust URL if necessary
+          const response = await fetch("http://localhost:3000/fetch-flights"); 
           if (!response.ok) {
             throw new Error("Failed to fetch flight data");
           }
           const data = await response.json();
   
-          // Find the cheapest price
           const cheapestFlight = data.best_flights.reduce((cheapest, flight) =>
             flight.price < cheapest.price ? flight : cheapest
           );
