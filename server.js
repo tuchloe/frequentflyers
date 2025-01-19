@@ -14,7 +14,7 @@ app.get("/fetch-flights", (req, res) => {
     {
       engine: "google_flights",
       departure_id: "BOS", 
-      arrival_id: "LAX", 
+      arrival_id: "ORY", 
       outbound_date: "2025-01-25",
       return_date: "2025-02-07",
       currency: "USD", 
