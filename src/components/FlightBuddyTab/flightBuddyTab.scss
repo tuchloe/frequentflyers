@@ -58,7 +58,7 @@
         width: 28%;
         max-height: 100px;
         border: 1px solid lightgray;
-        padding: 22px 0;
+        padding: 20px 0;
         background-color: #1765CC;
         background-image: linear-gradient(to right, #6700A3 , #1765CC);
         color: white;
@@ -82,9 +82,9 @@
                 color: #1765CC;
                 background-color: white;
                 font-size: 14px;
-                border-radius: 18px;
+                border-radius: 16px;
                 width: 48px;
-                height: 20px;
+                height: 18px;
                 padding: 4px;
                 text-align: center;
             }
@@ -96,6 +96,7 @@
             &--text {
                 text-align: center;
                 margin: 0;
+                padding-top: 4px;
                 font-size: 14px;
             }
         }
