@@ -47,16 +47,18 @@ function FlightBuddyTab() {
             <div className='flight-tabs--flight-buddy' 
                 onMouseEnter={() => setHidden(false)}
                 onMouseLeave={() => setHidden(true)}>
+                    {/* insert pop up component here */}
                     {!hidden && ( <div className="flight-tabs--flight-buddy--hover-box">
-                        <h1>Hovering</h1>
+                        <textarea name="test" id="test" placeholder='does this test box'></textarea>
+                    {/* pop up component ends here  */}
             </div>)}
                 <div className='flight-tabs--flight-buddy__top'>
                     <img src={geminiLogo} alt="Gemini Icon" />
-                    <p className='flight-tabs--flight-buddy__top--text'>from <b>${cheapestPrice}</b></p>
+                    <p className='flight-tabs--flight-buddy__top--text'>At <b>$434</b></p>
                     <p className='flight-tabs--flight-buddy__top--new'><b>NEW</b></p>
                 </div>
                 <div className='flight-tabs--flight-budy__bottom'>
-                    <p className='flight-tabs--flight-buddy__bottom--text'>from <b>Flight Buddy</b>, your AI trip planner</p>
+                    <p className='flight-tabs--flight-buddy__bottom--text'>1/27 - 2/7 from <b>Flight Buddy</b></p>
                 </div>
             </div>
         </div>
