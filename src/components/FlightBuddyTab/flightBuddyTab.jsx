@@ -40,18 +40,11 @@ function FlightBuddyTab() {
             </div>
             <div className='flight-tabs--cheapest'>
                 <p className='flight-tabs--cheapest--text'>Cheapest</p>
-                {loading && <p className='flight-tabs--cheapest--text__subtext'>Loading...</p>}
-                {error && <p className='flight-tabs--cheapest--text__subtext'>Error loading price</p>}
-                {!loading && !error && (
-                <p className='flight-tabs--cheapest--text__subtext'>
-                    from <b>${cheapestPrice}</b>
-                </p>
-                )}
+                <p className='flight-tabs--cheapest--text__subtext'>from <b>${cheapestPrice}</b></p>
             </div>
             <div className='flight-tabs--flight-buddy'>
-                <div className='flight-tabs--flight-budy__top'>
-                    <p className='flight-tabs--flight-buddy__top--text'>from</p>
-                    <p className='flight-tabs--flight-buddy__top--price'>${cheapestPrice}</p>
+                <div className='flight-tabs--flight-buddy__top'>
+                    <p className='flight-tabs--flight-buddy__top--text'>from <b>${cheapestPrice}</b></p>
                     <p className='flight-tabs--flight-buddy__top--new'>NEW</p>
                 </div>
                 <div className='flight-tabs--flight-budy__bottom'>

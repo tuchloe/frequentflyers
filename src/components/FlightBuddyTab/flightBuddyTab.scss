@@ -1,0 +1,67 @@
+.flight-tabs {
+    display: flex;
+    align-items: center;
+
+    &--best {
+        width: 28%;
+        height: 120px;
+        text-align: center;
+        border: 1px solid lightgray;
+        margin-left: 110px;
+        
+        &--text {
+            padding-top: 32px;
+        }
+    }
+
+    &--cheapest {
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+        height: 120px;
+        text-align: center;
+        border: 1px solid lightgray;
+        
+
+        &--text {
+            margin: 0;
+            padding-top: 42px;
+
+            &__subtext {
+                margin: 0;
+            }
+        }
+    }
+
+    &--flight-buddy {
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+        max-height: 120px;
+        border: 1px solid lightgray;
+        padding: 41px 0;
+
+        &__top {
+            display: flex;
+            margin: 0 auto;
+            
+            &--text {
+                text-align: center;
+                margin: 0;
+            }
+
+            &--new {
+                margin: 0;
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            
+            &--text {
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+}
