@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 
 function FlightBuddyTab() {
     const [cheapestPrice, setCheapestPrice] = useState(null);
+    const [hidden, setHidden] = useState(true);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -43,7 +44,12 @@ function FlightBuddyTab() {
                 <p className='flight-tabs--cheapest--text'>Cheapest</p>
                 <p className='flight-tabs--cheapest--text__subtext'>from <b>${cheapestPrice}</b></p>
             </div>
-            <div className='flight-tabs--flight-buddy'>
+            <div className='flight-tabs--flight-buddy' 
+                onMouseEnter={() => setHidden(false)}
+                onMouseLeave={() => setHidden(true)}>
+                    {!hidden && ( <div className="flight-tabs--flight-buddy--hover-box">
+                        <h1>Hovering</h1>
+            </div>)}
                 <div className='flight-tabs--flight-buddy__top'>
                     <img src={geminiLogo} alt="Gemini Icon" />
                     <p className='flight-tabs--flight-buddy__top--text'>from <b>${cheapestPrice}</b></p>
