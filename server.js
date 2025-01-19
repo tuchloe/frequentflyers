@@ -1,21 +1,25 @@
 import express from "express";
 import { getJson } from "serpapi";
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
+
 
 app.get("/fetch-flights", (req, res) => {
   getJson(
     {
       engine: "google_flights",
       departure_id: "BOS", 
-      arrival_id: "ORY", 
+      arrival_id: "LAX", 
       outbound_date: "2025-01-25",
-      return_date: "2025-02-08",
+      return_date: "2025-02-07",
       currency: "USD", 
       hl: "en", 
-      api_key: "149afc64eb30e1292e4bb608ecb0e580cd94d0431f77586e4010a945ece079aa", 
+      api_key: process.env.SERPAPI_KEY, 
     },
     (json) => {
       res.json(json); 
