@@ -1,11 +1,12 @@
 import './flightBuddyTab.scss';
+import geminiLogo from '../../assets/gemini-logo.svg';
 import React, { useState, useEffect } from "react";
 
 function FlightBuddyTab() {
     const [cheapestPrice, setCheapestPrice] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-  
+
     useEffect(() => {
       const fetchFlightData = async () => {
         setLoading(true);
@@ -44,8 +45,9 @@ function FlightBuddyTab() {
             </div>
             <div className='flight-tabs--flight-buddy'>
                 <div className='flight-tabs--flight-buddy__top'>
+                    <img src={geminiLogo} alt="Gemini Icon" />
                     <p className='flight-tabs--flight-buddy__top--text'>from <b>${cheapestPrice}</b></p>
-                    <p className='flight-tabs--flight-buddy__top--new'>NEW</p>
+                    <p className='flight-tabs--flight-buddy__top--new'><b>NEW</b></p>
                 </div>
                 <div className='flight-tabs--flight-budy__bottom'>
                     <p className='flight-tabs--flight-buddy__bottom--text'>from <b>Flight Buddy</b>, your AI trip planner</p>
