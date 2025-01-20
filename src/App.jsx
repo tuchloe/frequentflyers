@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
-import Header from "./components/header/header.jsx";
+import Intro from "./components/FB-intro/FB-intro.jsx";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <Header />
+            <Intro />
             </>
           } />
         </Routes>
