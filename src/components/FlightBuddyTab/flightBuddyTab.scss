@@ -1,10 +1,10 @@
 .flight-tabs {
     display: flex;
     align-items: center;
-    margin-top: 164px;
+    margin: 50px auto;
 
     &--best {
-        width: 28%;
+        width: 344px;
         height: 100px;
         text-align: center;
         border: 1px solid lightgray;
@@ -29,7 +29,7 @@
     &--cheapest {
         display: flex;
         flex-direction: column;
-        width: 28%;
+        width: 344px;
         height: 100px;
         text-align: center;
         border: 1px solid lightgray;
@@ -58,7 +58,7 @@
     &--flight-buddy {
         display: flex;
         flex-direction: column;
-        width: 28%;
+        width: 344px;
         max-height: 100px;
         border: 1px solid lightgray;
         padding: 20px 0;
@@ -71,13 +71,11 @@
 
         &--hover-box {
             position: absolute; 
-            top: 100%; 
-            left: 50%; 
+            top: 100%;
+            left: 0;
             transform: translateX(-50%);
             padding: 10px;
             background-color: white;
-            border: 1px solid black;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 10;
         }
 
