@@ -10,7 +10,7 @@ import arrowDown2 from '../../assets/icons/ArrowDown2.svg';
 import calendar from '../../assets/icons/calendar.svg';
 
 
-const TooltipBuddy = () => {
+const FlightBuddyPopUp = () => {
     const [cheapestPrice, setCheapestPrice] = useState(null);
     const [hidden, setHidden] = useState(true);
     const [loading, setLoading] = useState(true);
@@ -56,7 +56,7 @@ const TooltipBuddy = () => {
                     <h2 className='tooltip__body--title'> Buddy's best recommendation</h2>
                     <div className='tooltip__body--recommended-date'>
                         <div className='tooltip__body--recommended-date__depart'>
-                            <img src={calendar} alt="calendar icon" />
+                            <img src={calendar} className='tooltip__body--recommended-date--img' alt="calendar icon" />
                             <p className='tooltip__body--recommended-date--text'>Tue, Jan 28</p>
                             <p className='tooltip__body--recommended-date--arrows'>&lt; &gt;</p>
                              
@@ -145,4 +145,4 @@ const TooltipBuddy = () => {
     )
 }
 
-export default TooltipBuddy;
+export default FlightBuddyPopUp;
