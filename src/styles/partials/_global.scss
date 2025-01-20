@@ -1,0 +1,19 @@
+*,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flightBuddy_font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+// colors
+
+$fb-blue: #1765CC;
+$fb-light-blue: #3868FA;
+$fb-purple: #6700A3;
+$fb-gray: #70757A;

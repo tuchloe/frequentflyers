@@ -1,10 +1,10 @@
 import './homepage-body.scss';
-import arrows from '../../assets/arrow-icon.svg';
-import depatureIcon from '../../assets/departure.svg';
-import arrivalsIcon from '../../assets/arrivals.svg';
-import calendarIcon from '../../assets/calendar.svg';
-import passengerIcon from '../../assets/passenger.svg';
-import downArrow from '../../assets/down-arrow.svg';
+import arrows from '../../assets/icons/arrow-icon.svg';
+import depatureIcon from '../../assets/icons/departure.svg';
+import arrivalsIcon from '../../assets/icons/arrivals.svg';
+import calendarIcon from '../../assets/icons/calendar.svg';
+import passengerIcon from '../../assets/icons/passenger.svg';
+import downArrow from '../../assets/icons/arrow-down.svg';
 
 function HomepageBody () {
 

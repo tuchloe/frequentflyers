@@ -1,6 +1,7 @@
 import './flightBuddyTab.scss';
-import geminiLogo from '../../assets/gemini-logo.svg';
+import geminiLogo from '../../assets/icons/gemini-logo.svg';
 import React, { useState, useEffect } from "react";
+import TooltipBuddy from '../FlightBuddyPopUp/flightBuddyPopUp.jsx'
 
 function FlightBuddyTab() {
     const [cheapestPrice, setCheapestPrice] = useState(null);
@@ -47,11 +48,10 @@ function FlightBuddyTab() {
             <div className='flight-tabs--flight-buddy' 
                 onMouseEnter={() => setHidden(false)}
                 onMouseLeave={() => setHidden(true)}>
-                    {/* insert pop up component here */}
-                    {!hidden && ( <div className="flight-tabs--flight-buddy--hover-box">
-                        <textarea name="test" id="test" placeholder='does this test box'></textarea>
-                    {/* pop up component ends here  */}
-            </div>)}
+                    {!hidden && ( 
+                      <div className="flight-tabs--flight-buddy--hover-box">
+                        < TooltipBuddy />
+                      </div>)}
                 <div className='flight-tabs--flight-buddy__top'>
                     <img src={geminiLogo} alt="Gemini Icon" />
                     <p className='flight-tabs--flight-buddy__top--text'>At <b>$434</b></p>
