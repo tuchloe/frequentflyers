@@ -3,6 +3,7 @@
   flex-direction: row;
   background: linear-gradient(90deg, #F3E5FF, #E6F7FF);
   padding: 25px;
+  padding-bottom: 40px;
   border-radius: 8px;
   width: 65vw;
   justify-content: space-between;
@@ -43,6 +44,7 @@
   margin: 8px 0 0;
   justify-content: flex-start;
   text-align: left;
+  line-height: 1.35rem;
 }
 .FB-intro__text--highlight {
   color: #3612A0;
@@ -55,7 +57,7 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 37vw;
-  margin-top: 42px;
+  margin-top: 40px;
 }
 .FB-intro__subheading {
   font-size: 14px;
@@ -86,7 +88,8 @@
   display: block;
   position: absolute;
   right: 25px;
-  font-size: 0.875rem;
+  bottom: 25px;
+  font-size: 0.85rem;
   color: #1A73E8;
   text-decoration: none;
 }/*# sourceMappingURL=FB-intro.css.map */
