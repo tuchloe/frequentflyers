@@ -1,41 +1,49 @@
-import './homepage-body.scss'
+import './homepage-body.scss';
+import arrows from '../../assets/arrow-icon.svg';
+import depatureIcon from '../../assets/departure.svg';
+import arrivalsIcon from '../../assets/arrivals.svg';
+import calendarIcon from '../../assets/calendar.svg';
+import passengerIcon from '../../assets/passenger.svg';
+import downArrow from '../../assets/down-arrow.svg';
 
 function HomepageBody () {
 
     return (
         <div className="homepage">
-            <div className="homepage--hero-image">
-                <h1 className="homepage--title">Flights</h1>
-            </div>
             <div className="homepage--dropdown">
                 <div className="homepage--dropdown__round-trip">
-                    <p className="homepage--dropdown__round-trip--text">Round Trip</p>     
+                    <img src={arrows} className='homepage--dropdown__round-trip--img-1' alt="two arrows pointing left and right" />
+                    <p className="homepage--dropdown__round-trip--text">Round Trip</p>    
+                    <img src={downArrow} className='homepage--dropdown__round-trip--img-2' alt="down arrow" /> 
                 </div>
                 <div className="homepage--dropdown__passengers">
+                    <img src={passengerIcon} className='homepage--dropdown__passengers--img-1' alt="passenger outline" />
                     <p className="homepage--dropdown__passengers--text">1</p>
+                    <img src={downArrow} className='homepage--dropdown__passengers--img-2' alt="down arrow" /> 
                 </div>
                 <div className="homepage--dropdown__economy">
                     <p className="homepage--dropdown__economy--text">Economy</p>
+                    <img src={downArrow} className='homepage--dropdown__economy--img' alt="down arrow" />
                 </div>
             </div>
             <div className="homepage--selection">
                 <form className="homepage--selection__box-1">
                     <input type="text" className="homepage--selection__box-1--depart-city" name="departure-city" placeholder="Where from?" />
+                    <img src={arrows} className='homepage--selection__box-1--img' alt="two arrows pointing left and right" />
                     <input type="text" className="homepage--selection__box-1--return-city" name="return-city" placeholder="Where to?" />
                 </form>
                 <form className="homepage--selection__box-2">
                     <input type="text" className="homepage--selection__box-2--depart-date" name="departure-date" placeholder="Tue, Mar 18" />
                     <input type="text" className="homepage--selection__box-2--return-date" name="return-date" placeholder="Tue, Mar 25" />
                 </form>
-                {/* <div className="homepage--selection__box-2--depart-date">
-                    <p className="homepage--selection__box-2--depart-date--text">Tue, Mar 18</p>
-                </div>
-                <div className="homepage--selection__box-2--return-date">
-                    <p className="homepage--selection__box-2--return-date--text">Tue, Mar 25</p>
-                </div>            */}
             </div>
-            <div className="homepage--explore">
-                <button className="homepage--explore--button">Explore</button>
+            <div className='homepage--buttons'>
+                <div className="homepage--buttons__search">
+                    <button className="homepage--buttons__search--button">Search</button>
+                </div>
+                <div className="homepage--buttons__ai">
+                    <button className="homepage--button__ai--button"><b>LAX</b> | 1/24 to 2/7</button>
+                </div>
             </div>
         </div>
     );

@@ -1,11 +1,11 @@
 import './App.css'
-import HomepageBody from './components/HomepageBody/homepage-body'
+import FlightBuddyTab from './components/FlightBuddyTab/flightBuddyTab'
 
 function App() {
 
   return (
     <>
-    <HomepageBody />
+    < FlightBuddyTab />
     </>
   )
 }
