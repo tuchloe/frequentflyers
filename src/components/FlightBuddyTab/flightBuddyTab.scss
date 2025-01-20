@@ -1,10 +1,10 @@
 .flight-tabs {
     display: flex;
     align-items: center;
-    margin-top: 164px;
+    margin-top: 50px;
 
     &--best {
-        width: 28%;
+        width: 344px;
         height: 100px;
         text-align: center;
         border: 1px solid lightgray;
@@ -29,7 +29,7 @@
     &--cheapest {
         display: flex;
         flex-direction: column;
-        width: 28%;
+        width: 344px;
         height: 100px;
         text-align: center;
         border: 1px solid lightgray;
@@ -58,7 +58,7 @@
     &--flight-buddy {
         display: flex;
         flex-direction: column;
-        width: 28%;
+        width: 344px;
         max-height: 100px;
         border: 1px solid lightgray;
         padding: 20px 0;
