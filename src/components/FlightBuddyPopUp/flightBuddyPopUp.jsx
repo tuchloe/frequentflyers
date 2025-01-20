@@ -8,6 +8,7 @@ import thumbsUp from '../../assets/icons/thumbsUp.svg';
 import thumbsDown from '../../assets/icons/thumbsDown.svg';
 import arrowDown2 from '../../assets/icons/ArrowDown2.svg';
 import calendar from '../../assets/icons/calendar.svg';
+import jetblue from '../../assets/icons/jetblue.svg';
 
 
 const FlightBuddyPopUp = () => {
@@ -70,7 +71,7 @@ const FlightBuddyPopUp = () => {
                         <h3>Departure</h3>
                         <div className='tooltip__body'>
                             <div>
-                                <img src="" alt="jetblue icon" style={{ width: '30px' }} />
+                                <img src={jetblue} className='tooltip__body--airline-img' alt="jetblue icon" />
                             </div>
                             <div className='tooltip__body--time'>
                                 <p className='tooltip__body--time__text'>8:19PM – 9:20 AM<sup>+1</sup></p>
@@ -94,7 +95,7 @@ const FlightBuddyPopUp = () => {
                         <h3>Return</h3>
                         <div className='tooltip__body'>
                             <div>
-                                <img src="" alt="jetblue icon" style={{ width: '30px' }} />
+                                <img src={jetblue} className='tooltip__body--airline-img' alt="jetblue icon" />
                             </div>
                             <div className='tooltip__body--time'>
                                 <p className='tooltip__body--time__text'>1:35 PM - 4:03 PM</p>
