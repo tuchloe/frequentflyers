@@ -1,0 +1,167 @@
+@use '../../styles/partials/global' as *;
+
+.tooltip-padding {
+    padding: 2rem;
+    // width: 50%;
+}
+
+.tooltip-container {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 8px 8px; // Changed to only round bottom corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    @include flightBuddy_font;
+    width: 100%;
+    margin-top: -1px; // To prevent double border with header
+}
+
+.tooltip-header {
+    color: white;
+    background: linear-gradient(to left, $fb-blue, $fb-purple);
+    padding: 2rem;
+    border-radius: 8px 8px 0 0;
+    width: 100%; // Remove calc() since we're standardizing padding
+    @include flightBuddy_font;
+
+}
+
+.tooltip__body--title{
+    color: $fb-purple;
+    padding-bottom: 1rem;
+}
+
+h3{
+    padding: 1rem;
+}
+
+.underlining-header {
+    text-decoration: underline;
+    text-align: right;
+
+}
+
+.tooltip__body{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    
+}
+
+.tooltip__typo--delta{
+    color: $fb-gray;
+    font-size: small;
+}
+
+
+
+.tooltip__body--time {
+    min-width: 200px;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0e7;
+    border-radius: 5px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    padding-inline: 1rem;
+    max-height: 32px;
+    > :nth-child(2) {
+        font-size: x-small;
+        position: relative;
+        bottom: 3px;
+    }
+    img {
+       width: 10px;
+    }
+}
+
+.tooltip__body--ETA{
+    p{
+        text-align: center;
+        color: $fb-gray;
+    }
+}
+
+.tooltip__body--route{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        color: $fb-light-blue;
+        text-decoration: underline;
+    }
+}
+
+.tooltip__body--price{
+    text-align: right;
+    > *:first-child {
+        font-weight: bold;
+    }
+    > *:nth-child(2){
+        color: $fb-gray;
+    } 
+}
+
+.tooltip__button{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    > *:first-child{
+        background-color: $fb-purple;
+        color: white;
+        padding: 0.5rem 3rem;
+        border-radius: 20px;
+    }
+}
+
+.toolTip__seeMore{
+    color: $fb-blue;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.tooltip__footer{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+// search box
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: rgb(244, 244, 244);
+}
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    background-color: rgb(244, 244, 244);
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #666;
+    cursor: pointer;
+  
+    &:hover {
+      fill: #333;
+    }
+  }
