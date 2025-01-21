@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
-import Intro from "./components/FB-intro/FB-intro.jsx";
+import Hotels from "./components/Hotel/Hotels.jsx";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-            <Intro />
+            <Hotels />
             </>
           } />
         </Routes>
