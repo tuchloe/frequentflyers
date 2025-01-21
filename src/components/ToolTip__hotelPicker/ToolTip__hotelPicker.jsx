@@ -12,25 +12,25 @@ import Hotel from '../Hotel/Hotels.jsx'
 
 const TooltipBuddy = () => {
     return (
-        <div className='tooltip-padding'>
+        <div className='tooltip-hotel-padding'>
             <div className='tooltip-header'>
                 <a href="https://policies.google.com/privacy?hl=en#infocollect" className='underlining-aTag'>Learn more about data collection</a>
-                <h3 className='toolTipHotel__title'>How Flight Buddy made this for you</h3>
+                <h3 className='toolTipHotel__title'>Buddy has you covered</h3>
                 <p><img src={planeIcon} alt="plane Icon" /><b> Based on your activity,</b> we see you usually book 4-star hotels. We scan 100+ Paris hotels in real-time to find your ideal matches. </p>
                 <p><img src={planeIcon} alt="plane icon" /><b> Keeping an eye on your destination</b>—Paris might be a bit rainy during your visit. We've included suggestions for indoor activities. </p>
 
                 
             </div>
         
-        <div className="tooltip-container">
+        <div className="tooltip-hotel-container">
             
             {/* <h2 className='tooltip__body--title'> Buddy's best recommendation</h2> */}
 
             <div className='curatedIntinerary'>
                 <Hotel/>
                 <p className='hotelPicker__body--title'>We curated a customized itinerary to your specific dates</p>
-                <p><b>Paris Itinerary (January 27th - February 7th) - Rainy Days</b></p>
-                <p>This itinerary focuses on indoor activities and cozy spots to enjoy Paris even when the weather isn't cooperating.</p>
+                <p><b>Paris Itinerary (January 27th - February 7th) - Rainy Days</b> <br />
+                This itinerary focuses on indoor activities and cozy spots to enjoy Paris even when the weather isn't cooperating.</p>
                 <p><b>Day 1 (January 27th): Arrival & Parisian Charm</b></p>
                 <ul className='itineraryList'>
                     <li>Morning: Arrive at Charles de Gaulle Airport (CDG). Take the RER B train to your accommodation.</li>

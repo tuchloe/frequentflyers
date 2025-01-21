@@ -1,11 +1,14 @@
 import './homepage-body.scss';
+import React, { useState, useEffect } from "react";
 import arrows from '../../assets/icons/arrow-icon.svg';
 import passengerIcon from '../../assets/icons/passenger.svg';
 import downArrow from '../../assets/icons/filled-down-arrow.svg';
 import search from '../../assets/icons/search.svg';
 import gemini from '../../assets/icons/gemini-logo.svg';
+import TooltipBuddy from '../Tooltip/Tooltip_flightBuddy';
 
 function HomepageBody () {
+    const [hidden, setHidden] = useState(true);
 
     return (
         <div className="homepage">
@@ -42,10 +45,16 @@ function HomepageBody () {
                         <img src={search} className='homepage--buttons__search--button--img' alt="magnifying glass" />
                         Search</button>
                 </div>
-                <div className="homepage--buttons__ai">
-                    <a href="/BOS-ORY" className="homepage--buttons__ai--button">
-                        <img src={gemini} className='homepage--buttons__ai--button--img' alt="gemini logo" />
-                        <b>LAX </b>&nbsp;| 1/24 to 2/7
+                <div className="homepage--buttons__ai"
+                    onMouseEnter={() => setHidden(false)}
+                    onMouseLeave={() => setHidden(true)}>
+                        {!hidden && (
+                            <div className='homepage--buttons__ai__popup'>
+                                < TooltipBuddy />
+                            </div>)}
+                            <a href="/BOS-CDG" className="homepage--buttons__ai--button">
+                                <img src={gemini} className='homepage--buttons__ai--button--img' alt="gemini logo" />
+                                <b>LAX </b>&nbsp;| 1/24 to 2/7
                     </a>
                 </div>
             </div>

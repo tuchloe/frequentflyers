@@ -45,7 +45,7 @@ const TooltipBuddy = () => {
                     </div>
                     <div className='tooltip__body--price'>
                         <p>$345</p>
-                        <p>round Trip</p>
+                        <p>round trip</p>
                     </div>
                 </div>
             </div>
@@ -70,12 +70,12 @@ const TooltipBuddy = () => {
                     </div>
                     <div className='tooltip__body--price'>
                         <p>$345</p>
-                        <p>Round Trip</p>
+                        <p>round trip</p>
                     </div>
                 </div>
             </div>
             <div className='tooltip__button'>
-                <p>Continue</p>
+                <a href="/BOS-CDG"><p>Continue</p></a>
             </div>
 
             <div className='toolTip__seeMore'>

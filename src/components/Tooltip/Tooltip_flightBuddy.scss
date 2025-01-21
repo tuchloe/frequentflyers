@@ -2,6 +2,7 @@
 
 .tooltip-padding {
     padding: 2rem;
+    width: 668px;
     // width: 50%;
 }
 
@@ -118,11 +119,14 @@ h3{
     display: flex;
     justify-content: flex-end;
     text-align: right;
+    text-decoration: none;
+    color: white;
     > *:first-child{
         background-color: $fb-purple;
         color: white;
         padding: 0.5rem 3rem;
         border-radius: 20px;
+        text-decoration: none;
     }
 }
 

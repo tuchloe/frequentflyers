@@ -119,7 +119,9 @@ const FlightBuddyPopUp = () => {
                         <p className='tooltip__body--savings--text'><b>{`You saved $${cheapestPrice - 434} on this trip!`}</b></p>
                     </div>
                     <div className='tooltip__button'>
+                        <a href="/buddy-picks">
                         <p>Continue</p>
+                        </a>
                     </div>
 
                     <div className='tooltip__seeMore'>

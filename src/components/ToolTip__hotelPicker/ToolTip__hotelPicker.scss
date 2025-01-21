@@ -49,3 +49,16 @@
     }
     padding-bottom: 1rem;
 }
+
+.tooltip-hotel {
+
+    &-padding {
+        width: 1020px;
+        padding: 50px;
+        border: 1px solid #e0e0e0;
+    }
+
+    &-container {
+        padding: 14px;
+    }
+}
