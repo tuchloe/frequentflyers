@@ -39,7 +39,7 @@ const Intro = () => {
               rel="noopener noreferrer"
               className="FB-intro__privacy-link"
                 >Learn More <img src={link_arrow} alt="Link to learn more" />
-            </a> {/* opens a new window or tab to Google's privacy policy */}
+            </a> 
         </div>
       );
     };

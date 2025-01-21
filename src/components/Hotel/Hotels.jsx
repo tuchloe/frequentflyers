@@ -21,7 +21,7 @@ const Hotels = () => {
                             <img src={star} class="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
                             <p class="FB-suggestion__hotel-item--rating--number">4</p>
                         </div>
-                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount">$258</span></p>
+                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount"><b>$258</b></span></p>
                     </div>
                 </div>
                 </div>
@@ -34,7 +34,7 @@ const Hotels = () => {
                             <img src={star} class="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
                             <p class="FB-suggestion__hotel-item--rating--number">4</p>
                         </div>
-                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount">$265</span></p>
+                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount"><b>$258</b></span></p>
                     </div>
                     </div>
                 </div><div class="FB-suggestion__hotel-item">
@@ -46,7 +46,7 @@ const Hotels = () => {
                             <img src={star} class="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
                             <p class="FB-suggestion__hotel-item--rating--number">4</p>
                         </div>
-                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount">$346</span></p>
+                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount"><b>$346</b></span></p>
                     </div>
                     </div>
                 </div><div class="FB-suggestion__hotel-item">
@@ -58,19 +58,19 @@ const Hotels = () => {
                             <img src={star} class="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
                             <p class="FB-suggestion__hotel-item--rating--number">4</p>
                         </div>
-                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount">$226</span></p>
+                        <p class="FB-suggestion__hotel-item--pricing">Per night <span  class="FB-suggestion__hotel-item--pricing--amount"><b>$226</b></span></p>
                     </div>
                     </div>
                 </div>
                 <div class="FB-suggestion__hotel-list--continue">
                     <a
-                      href="https://policies.google.com/privacy?hl=en#infocollectt" 
+                      href="https://www.google.com/search?q=paris+hotels" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="FB-intro__privacy-link"
                     //   style={{ position: 'relative' }}
                         >See More 
-                    </a> {/* opens a new window or tab to Google's privacy policy */}
+                    </a> 
                 </div>
             </div>
 

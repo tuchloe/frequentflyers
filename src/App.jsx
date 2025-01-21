@@ -11,14 +11,12 @@ function App() {
 
   return (
     <>
-        <TooltipBuddy />   
-        <TooltipHotelPicker />
-        <FlightBuddyPopUp />
-        <FlightBuddyTab />
+        <TooltipBuddy/>   
+        <TooltipHotelPicker/>
+        <FlightBuddyPopUp/>
+        <FlightBuddyTab/>
         <homePageBody/>
         <FbIntro/> 
-      
-
     </>
   );
 };
