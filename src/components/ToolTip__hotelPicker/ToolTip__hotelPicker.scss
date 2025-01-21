@@ -21,6 +21,12 @@
     }
 }
 
+.hotelPicker__body--title{
+    padding-top: 2rem;
+    color: $fb-purple;
+    font-weight: bold;
+}
+
 .toolTipHotel__title {
     padding-left: 0;
     color: white;
@@ -28,7 +34,7 @@
 
 .itineraryList {
     list-style-position: inside;
-    padding-left: 0;
+    padding-left: 1rem;
     margin: 0;
     
     li {

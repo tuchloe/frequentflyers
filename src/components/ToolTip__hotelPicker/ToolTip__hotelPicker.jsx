@@ -8,6 +8,7 @@ import mic from '../../assets/icons/mdi_microphone.svg';
 import thumbsUp from '../../assets/icons/thumbsUp.svg';
 import thumbsDown from '../../assets/icons/thumbsDown.svg';
 import arrowDown2 from '../../assets/icons/ArrowDown2.svg';
+import Hotel from '../Hotel/Hotels.jsx'
 
 const TooltipBuddy = () => {
     return (
@@ -15,15 +16,19 @@ const TooltipBuddy = () => {
             <div className='tooltip-header'>
                 <a href="https://policies.google.com/privacy?hl=en#infocollect" className='underlining-aTag'>Learn more about data collection</a>
                 <h3 className='toolTipHotel__title'>How Flight Buddy made this for you</h3>
-                <p><img src={planeIcon} alt="plane Icon" /><b>Based on your activity,</b> we see you usually book 4-star hotels. We scan 100+ Paris hotels in real-time to find your ideal matches. </p>
-                <p><img src={planeIcon} alt="plane icon" /><b>Keeping an eye on your destination</b>—Paris might be a bit rainy during your visit. We've included suggestions for indoor activities. </p>
+                <p><img src={planeIcon} alt="plane Icon" /><b> Based on your activity,</b> we see you usually book 4-star hotels. We scan 100+ Paris hotels in real-time to find your ideal matches. </p>
+                <p><img src={planeIcon} alt="plane icon" /><b> Keeping an eye on your destination</b>—Paris might be a bit rainy during your visit. We've included suggestions for indoor activities. </p>
+
+                
             </div>
+        
         <div className="tooltip-container">
             
             {/* <h2 className='tooltip__body--title'> Buddy's best recommendation</h2> */}
 
             <div className='curatedIntinerary'>
-                <p>We curated a customized itinerary to your specific dates</p>
+                <Hotel/>
+                <p className='hotelPicker__body--title'>We curated a customized itinerary to your specific dates</p>
                 <p><b>Paris Itinerary (January 27th - February 7th) - Rainy Days</b></p>
                 <p>This itinerary focuses on indoor activities and cozy spots to enjoy Paris even when the weather isn't cooperating.</p>
                 <p><b>Day 1 (January 27th): Arrival & Parisian Charm</b></p>

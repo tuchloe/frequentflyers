@@ -4,6 +4,8 @@ import TooltipHotelPicker from './components/ToolTip__hotelPicker/ToolTip__hotel
 import FlightBuddyPopUp from './components/FlightBuddyPopUp/flightBuddyPopUp'
 import FlightBuddyTab from './components/FlightBuddyTab/flightBuddyTab'
 import homePageBody from './components/HomepageBody/homepage-body'
+import FbIntro from './components/FB-intro/FB-intro'
+import Hotels from './components/Hotel/Hotels'
 
 function App() {
 
@@ -22,11 +24,18 @@ function App() {
         <FlightBuddyTab />
       </div>
       <div>
-        <homePageBody />
+        <homePageBody/>
+      </div>
+      <div>
+        <FbIntro/>
+      </div>
+      <div>
+        <Hotels/>
       </div>
 
     </>
-  )
-}
+  );
+};
 
-export default App
+
+export default App;

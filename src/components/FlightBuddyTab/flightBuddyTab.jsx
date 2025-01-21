@@ -3,6 +3,7 @@ import geminiLogo from '../../assets/icons/gemini-logo.svg';
 import React, { useState, useEffect } from "react";
 import FlightBuddyPopUp from '../FlightBuddyPopUp/flightBuddyPopUp.jsx'
 
+
 function FlightBuddyTab() {
     const [cheapestPrice, setCheapestPrice] = useState(null);
     const [hidden, setHidden] = useState(true);

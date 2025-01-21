@@ -9,6 +9,7 @@ import thumbsUp from '../../assets/icons/thumbsUp.svg';
 import thumbsDown from '../../assets/icons/thumbsDown.svg';
 import arrowDown2 from '../../assets/icons/ArrowDown2.svg';
 
+
 const TooltipBuddy = () => {
     return (
         <div className='tooltip-padding'>
