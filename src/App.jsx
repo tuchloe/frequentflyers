@@ -1,4 +1,5 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FlightBuddyTab from './components/FlightBuddyTab/flightBuddyTab'
 import HomepageBody from './components/HomepageBody/homepage-body'
 
@@ -6,8 +7,17 @@ function App() {
 
   return (
     <>
-    {/* < HomepageBody /> */}
-    < FlightBuddyTab />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+        < HomepageBody />
+        } />
+
+        <Route path="/BOS-ORY" element={
+        < FlightBuddyTab />
+        } />
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
