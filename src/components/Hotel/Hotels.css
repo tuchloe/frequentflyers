@@ -1,0 +1,118 @@
+.FB-suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.FB-suggestion__subheader {
+  color: #3612A0;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 120% */
+  letter-spacing: 0.00625rem;
+}
+.FB-suggestion__subtitle {
+  color: #3612A0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem; /* 100% */
+  letter-spacing: 0.01875rem;
+  margin: 0;
+}
+.FB-suggestion__hotel-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.FB-suggestion__hotel-list--continue {
+  display: flex;
+  width: 6rem;
+  height: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #3868FA;
+  text-align: center;
+  line-height: var(--Label-Large-Line-Height, 1.25rem); /* 142.857% */
+  letter-spacing: var(--Label-Large-Tracking, 0.00625rem);
+}
+.FB-suggestion__hotel-item {
+  display: flex;
+  width: 12.1875rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.FB-suggestion__hotel-item--image {
+  height: 5.5625rem;
+  align-self: stretch;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  background: lightgray 50%/cover no-repeat;
+}
+.FB-suggestion__hotel-item--bubble {
+  display: flex;
+  padding: 0.75rem;
+  gap: 0.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  border: 1px solid var(--color-grey-87, #DADCE0);
+}
+.FB-suggestion__hotel-item--name {
+  align-self: stretch;
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  white-space: nowrap;
+  text-align: left;
+}
+.FB-suggestion__hotel-item--details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.FB-suggestion__hotel-item--rating {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.FB-suggestion__hotel-item--rating--star {
+  width: 1rem;
+  height: 1rem;
+}
+.FB-suggestion__hotel-item--rating--number {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: 0.01875rem;
+  margin: 0;
+  padding: 0;
+}
+.FB-suggestion__hotel-item--pricing {
+  text-align: right;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.75rem; /* 120% */
+  letter-spacing: 0.01875rem;
+  margin: 0;
+}
+.FB-suggestion__hotel-item--pricing--amount {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: 0.01875rem;
+}/*# sourceMappingURL=Hotels.css.map */
