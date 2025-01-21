@@ -75,7 +75,7 @@ const TooltipBuddy = () => {
                 </div>
             </div>
             <div className='tooltip__button'>
-                <a href="/BOS-CDG"><p>Continue</p></a>
+                <p>Continue</p>
             </div>
 
             <div className='toolTip__seeMore'>
