@@ -15,10 +15,10 @@ const TooltipBuddy = () => {
         <div className='tooltip-padding'>
             <div className='tooltip-header'>
             <a href="https://policies.google.com/privacy?hl=en#infocollect" className='underlining-aTag'>Learn more about data collection</a>
-                <h1>How Flight Buddy made this for you</h1>
-                <p><img src={planeIcon} alt="plane Icon" /> <b>Based on previous trips</b> you travel to LA on these dates every year.</p>
-                <p><img src={planeIcon} alt="plane icon" /> <b>Your preference</b> is evening flights based on your history. </p>
-                <p><img src={planeIcon} alt="plane icon" /> <b>Based on your activity,</b> we noticed that there is a major tech conference in Los Angeles during your usual travel time, so we prioritized an option that aligns with it.</p>
+                <h1 className='tooltip-header--title'>How Flight Buddy made this for you</h1>
+                <p className='tooltip-header--info'><img src={planeIcon} alt="plane Icon" /> <b>Based on previous trips</b> you travel to LA on these dates every year.</p>
+                <p className='tooltip-header--info'><img src={planeIcon} alt="plane icon" /> <b>Your preference</b> is evening flights based on your history. </p>
+                <p className='tooltip-header--info'><img src={planeIcon} alt="plane icon" /> <b>Based on your activity,</b> we noticed that there is a major tech conference in Los Angeles<br /> during your usual travel time, so we prioritized an option that aligns with it.</p>
             </div>
         <div className="tooltip-container">
             

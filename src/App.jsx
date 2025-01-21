@@ -5,8 +5,7 @@ import TooltipHotelPicker from './components/ToolTip__hotelPicker/ToolTip__hotel
 import FlightBuddyPopUp from './components/FlightBuddyPopUp/flightBuddyPopUp'
 import FlightBuddyTab from './components/FlightBuddyTab/flightBuddyTab'
 import HomePageBody from './components/HomepageBody/homepage-body'
-import FbIntro from './components/FB-intro/FB-intro'
-import Hotels from './components/Hotel/Hotels'
+import HomepageLower from './components/homepage-lower/homepage-lower';
 
 function App() {
 
@@ -17,18 +16,19 @@ function App() {
         <Route path ="/" element={
           <>
           < HomePageBody />
-          
+          < HomepageLower />
           </>
         } />
 
         <Route path="/BOS-CDG" element={
+          <>
           < FlightBuddyTab />
+          </>
         } />
 
         <Route path ="/buddy-picks" element={
           <>
           < TooltipHotelPicker />
-          {/* < FbIntro /> */}
           </>
         } />
 

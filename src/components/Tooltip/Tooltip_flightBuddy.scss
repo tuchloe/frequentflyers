@@ -12,6 +12,7 @@
     display: flex;
     justify-content: flex-end;
     text-decoration: underline;
+    font-size: 12px;
 }
 
 .tooltip-container {
@@ -32,6 +33,14 @@
     border-radius: 8px 8px 0 0;
     width: 100%; // Remove calc() since we're standardizing padding
     @include flightBuddy_font;
+
+    &--title {
+        font-size: 20px;
+    }
+
+    &--info {
+        font-size: 14px;
+    }
 
 }
 

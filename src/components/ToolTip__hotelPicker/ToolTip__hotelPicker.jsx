@@ -8,10 +8,15 @@ import mic from '../../assets/icons/mdi_microphone.svg';
 import thumbsUp from '../../assets/icons/thumbsUp.svg';
 import thumbsDown from '../../assets/icons/thumbsDown.svg';
 import arrowDown2 from '../../assets/icons/ArrowDown2.svg';
+import googlePage from '../../assets/images/booking-page.png'
 import Hotel from '../Hotel/Hotels.jsx'
 
 const TooltipBuddy = () => {
     return (
+        <div className='tooltip-hotel-total'>
+        <div className='google-img'>
+        <img src={googlePage} className='google-img--screenshot' alt="google flights screenshot" />
+    </div>
         <div className='tooltip-hotel-padding'>
             <div className='tooltip-header'>
                 <a href="https://policies.google.com/privacy?hl=en#infocollect" className='underlining-aTag'>Learn more about data collection</a>
@@ -61,6 +66,7 @@ const TooltipBuddy = () => {
             </div>
 
             
+        </div>
         </div>
         </div>
     )

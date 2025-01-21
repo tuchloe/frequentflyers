@@ -1,14 +1,23 @@
 .flight-tabs {
     display: flex;
-    align-items: center;
-    margin: 50px 300px;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin: 24px 0;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 910px;
+        margin: 0 auto; 
+    }
 
     &--best {
         width: 344px;
         height: 100px;
         text-align: center;
         border: 1px solid lightgray;
-        margin-left: 110px;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
 
@@ -101,6 +110,9 @@
                 height: 18px;
                 padding: 4px;
                 text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
 
@@ -114,5 +126,16 @@
                 font-size: 14px;
             }
         }
+    }
+}
+
+.google-img {
+    margin-top: 24px; 
+    display: flex;
+    justify-content: center; 
+
+    &--screenshot {
+        width: 100%; 
+        max-width: 910px;
     }
 }
