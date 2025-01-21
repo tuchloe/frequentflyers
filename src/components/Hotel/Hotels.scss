@@ -48,7 +48,7 @@
 
 &__hotel-item{
     display: flex;
-    width: 12.1875rem;
+    width: 11rem;
     flex-direction: column;
     align-items: flex-start;
 
@@ -132,4 +132,19 @@
     }
 }
 
+    &__hotel-item:hover {
+        transform: scale(1.2) !important;
+        cursor: pointer !important;
+    }
+}
+
+.google-img {
+    margin-top: 24px; 
+    display: flex;
+    justify-content: center; 
+
+    &--screenshot {
+        width: 100%; 
+        max-width: 910px;
+    }
 }

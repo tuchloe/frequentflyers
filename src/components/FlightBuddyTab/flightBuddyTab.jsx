@@ -2,6 +2,11 @@ import './flightBuddyTab.scss';
 import geminiLogo from '../../assets/icons/gemini-logo.svg';
 import React, { useState, useEffect } from "react";
 import FlightBuddyPopUp from '../FlightBuddyPopUp/flightBuddyPopUp.jsx'
+import arrows from '../../assets/icons/arrow-icon.svg';
+import passengerIcon from '../../assets/icons/passenger.svg';
+import downArrow from '../../assets/icons/filled-down-arrow.svg';
+import googleImage from '../../assets/images/flight-buddy-tab-google.png';
+
 
 
 function FlightBuddyTab() {
@@ -38,6 +43,7 @@ function FlightBuddyTab() {
 
 
     return(
+      <div className="flight-tabs-container">
         <div className='flight-tabs'>
             <div className='flight-tabs--best'>
                 <p className='flight-tabs--best--text'>Best</p>
@@ -62,6 +68,10 @@ function FlightBuddyTab() {
                     <p className='flight-tabs--flight-buddy__bottom--text'>1/27 - 2/7 from <b>Flight Buddy</b></p>
                 </div>
             </div>
+        </div>
+        <div className='google-img'>
+          <img src={googleImage} className='google-img--screenshot' alt="google flights screenshot" />
+        </div>
         </div>
     )
 }

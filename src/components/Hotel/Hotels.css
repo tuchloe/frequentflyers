@@ -49,8 +49,8 @@
 }
 
 .FB-suggestion__hotel-item:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+  transform: scale(1.05) !important;;
+  cursor: pointer !important;
 }
 
 

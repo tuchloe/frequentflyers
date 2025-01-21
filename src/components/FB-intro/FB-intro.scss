@@ -6,9 +6,10 @@
     padding: 25px;
     padding-bottom: 40px;
     border-radius: 8px;
-    width: 65vw;
+    width: 910px;
     justify-content: space-between;
     position: relative;
+    margin: 48px 300px;
 
   
     &__content {
@@ -101,7 +102,7 @@
       }
       &__privacy-link {
         display: block;
-        position: absolute;
+        // position: absolute;
         right: 25px;
         bottom: 25px;
         font-size: 0.85rem;

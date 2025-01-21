@@ -46,7 +46,7 @@ const FlightBuddyPopUp = () => {
         <div className='tooltip'>
             <div className='tooltip-padding'>
                     <div className='tooltip-header'>
-                        <p className='tooltip-header__underlined'>Learn more about data collection</p>
+                        <p className='tooltip-header__underlined'><a className='tooltip-header__underlined--link' href="https://policies.google.com/privacy?hl=en#infocollect" target="_blank">Learn more about data collection</a></p>
                         <h1 className='tooltip-header--title'>How Flight Buddy made this for you</h1>
                         <p className='tooltip-header--info'><img src={planeIcon} alt="plane Icon" /> <b>Based on current data</b> this flight has the lowest cancellation and delay rates.</p>
                         <p className='tooltip-header--info'><img src={planeIcon} alt="plane icon" /> <b>Based on your history</b> you value direct flights over layover. </p>
@@ -119,7 +119,9 @@ const FlightBuddyPopUp = () => {
                         <p className='tooltip__body--savings--text'><b>{`You saved $${cheapestPrice - 434} on this trip!`}</b></p>
                     </div>
                     <div className='tooltip__button'>
+                        <a href="/buddy-picks">
                         <p>Continue</p>
+                        </a>
                     </div>
 
                     <div className='tooltip__seeMore'>

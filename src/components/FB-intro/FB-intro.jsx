@@ -1,5 +1,5 @@
 import React from 'react';
-import './FB-intro.css'
+import './FB-intro.scss'
 import ai_symbol from '../../assets/icons/ai_symbol.svg'
 import plane_bullet from '../../assets/icons/plane_bullet.svg'
 import link_arrow from '../../assets/icons/group.svg'
