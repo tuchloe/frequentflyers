@@ -5,6 +5,14 @@
     // width: 50%;
 }
 
+.underlining-aTag {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+}
+
 .tooltip-container {
     position: relative;
     border: 1px solid #e0e0e0;

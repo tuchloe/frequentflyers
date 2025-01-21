@@ -13,7 +13,7 @@ const TooltipBuddy = () => {
     return (
         <div className='tooltip-padding'>
             <div className='tooltip-header'>
-                <p className='underlining-header'>Learn more about data collection</p>
+            <a href="https://policies.google.com/privacy?hl=en#infocollect" className='underlining-aTag'>Learn more about data collection</a>
                 <h1>How Flight Buddy made this for you</h1>
                 <p><img src={planeIcon} alt="plane Icon" /> <b>Based on previous trips</b> you travel to LA on these dates every year.</p>
                 <p><img src={planeIcon} alt="plane icon" /> <b>Your preference</b> is evening flights based on your history. </p>
