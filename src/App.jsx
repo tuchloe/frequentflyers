@@ -11,27 +11,13 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <TooltipBuddy />
-      </div>
-      <div className="App">
+        <TooltipBuddy />   
         <TooltipHotelPicker />
-      </div>
-      <div>
         <FlightBuddyPopUp />
-      </div>
-      <div>
         <FlightBuddyTab />
-      </div>
-      <div>
         <homePageBody/>
-      </div>
-      <div>
-        <FbIntro/>
-      </div>
-      <div>
-        <Hotels/>
-      </div>
+        <FbIntro/> 
+      
 
     </>
   );
