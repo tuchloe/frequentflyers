@@ -1,0 +1,81 @@
+import React from 'react';
+import './Hotels.scss'
+import hotel1 from '../../assets/images/hotel1.png'
+import hotel2 from '../../assets/images/hotel2.png'
+import hotel3 from '../../assets/images/hotel3.png'
+import hotel4 from '../../assets/images/hotel4.png'
+import star from '../../assets/icons/star.svg'
+
+const Hotels = () => {
+    return (
+        <div className="FB-suggestion">
+            <h1 className="FB-suggestion__subheader">Let Buddy complete your trip</h1>
+            <h2 className="FB-suggestion__subtitle">We found some 4 star hotels you may like</h2>
+            <div className="FB-suggestion__hotel-list"> {/* container for flex format */}
+                <div className="FB-suggestion__hotel-item"> {/* container for a hotel suggestion */}
+                <img className="FB-suggestion__hotel-item--image" src={hotel1} alt="Le Pavillon des Lettres"></img>
+                <div className="FB-suggestion__hotel-item--bubble">
+                    <p className="FB-suggestion__hotel-item--name">Le Pavillon des Lettres</p>
+                    <div className="FB-suggestion__hotel-item--details">
+                        <div className="FB-suggestion__hotel-item--rating">
+                            <img src={star} className="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
+                            <p className="FB-suggestion__hotel-item--rating--number">4</p>
+                        </div>
+                        <p className="FB-suggestion__hotel-item--pricing">Per night <span  className="FB-suggestion__hotel-item--pricing--amount">$258</span></p>
+                    </div>
+                </div>
+                </div>
+                <div className="FB-suggestion__hotel-item">
+                <img className="FB-suggestion__hotel-item--image" src={hotel2} alt="Hotel Monge Paris"></img>
+                <div className="FB-suggestion__hotel-item--bubble">
+                    <p className="FB-suggestion__hotel-item--name">Hotel Monge Paris</p>
+                    <div className="FB-suggestion__hotel-item--details">
+                        <div className="FB-suggestion__hotel-item--rating">
+                            <img src={star} className="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
+                            <p className="FB-suggestion__hotel-item--rating--number">4</p>
+                        </div>
+                        <p className="FB-suggestion__hotel-item--pricing">Per night <span  className="FB-suggestion__hotel-item--pricing--amount">$265</span></p>
+                    </div>
+                    </div>
+                </div><div className="FB-suggestion__hotel-item">
+                <img className="FB-suggestion__hotel-item--image" src={hotel3} alt="Le Narcisse Blanc"></img>
+                <div className="FB-suggestion__hotel-item--bubble">
+                    <p className="FB-suggestion__hotel-item--name">Le Narcisse Blanc</p>
+                    <div className="FB-suggestion__hotel-item--details">
+                        <div className="FB-suggestion__hotel-item--rating">
+                            <img src={star} className="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
+                            <p className="FB-suggestion__hotel-item--rating--number">4</p>
+                        </div>
+                        <p className="FB-suggestion__hotel-item--pricing">Per night <span  className="FB-suggestion__hotel-item--pricing--amount">$346</span></p>
+                    </div>
+                    </div>
+                </div><div className="FB-suggestion__hotel-item">
+                <img className="FB-suggestion__hotel-item--image" src={hotel4} alt="Hotel le Walt by Inwo..."></img>
+                <div className="FB-suggestion__hotel-item--bubble">
+                    <p className="FB-suggestion__hotel-item--name">Hotel le Walt by Inwo...</p>
+                    <div className="FB-suggestion__hotel-item--details">
+                        <div className="FB-suggestion__hotel-item--rating">
+                            <img src={star} className="FB-suggestion__hotel-item--rating--star" alt="Hotel rating"></img>
+                            <p className="FB-suggestion__hotel-item--rating--number">4</p>
+                        </div>
+                        <p className="FB-suggestion__hotel-item--pricing">Per night <span  className="FB-suggestion__hotel-item--pricing--amount">$226</span></p>
+                    </div>
+                    </div>
+                </div>
+                <div className="FB-suggestion__hotel-list--continue">
+                    {/* <a
+                      href="https://policies.google.com/privacy?hl=en#infocollectt" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="FB-intro__privacy-link"
+                    //   style={{ position: 'relative' }}
+                        >See More 
+                    </a> opens a new window or tab to Google's privacy policy */}
+                </div>
+            </div>
+
+        </div>
+      );
+    };
+
+export default Hotels;
